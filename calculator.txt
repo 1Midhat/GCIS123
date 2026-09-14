@@ -1,0 +1,32 @@
+def main():
+    operation = choose_operation()
+
+    operand1 = enter_operand("first")
+    operand2 = enter_operand("second")
+
+    print("operand1:",operand1)
+    print("operand2:",operand2)
+
+    if operation ==1:
+        result = operand1 + operand2
+        print("result:", result)
+
+    elif operation ==2:
+        result = operand1 - operand2
+        print("result", result)
+
+    elif operation ==3:
+        result = operand1 * operand2
+        print("result", result)
+
+    elif operation ==4:
+        division_type = get_division_type()
+
+    if division_type == 1:
+        result = operand1 / operand2
+        print("Result:", result)
+    elif division_type == 2:
+        result = operand1 // operand2
+        print("Result:", result)
+
+main()
